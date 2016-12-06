@@ -112,10 +112,12 @@ router.get('/adprofile/:ad_id', isAuthenticated, function(req, res){
   
   var fulldatenow;
   //For creating random data, generate random date and time => (max - min) + min
-  // randomdate = Math.random() * (1459377840218 - 1452377840218) + 1452377840218;
-  // randomdate = Math.random() * (1455377840218 - 1448377840218) + 1448377840218;
-  // randomdate = Math.random() * (1459377840218 - 1450377840218) + 1450377840218;
-  // fulldatenow = new Date(randomdate).toISOString();
+  //var randomChance = Math.random();
+  //if (randomChance > 0.66) randomdate = Math.random() * (1481000960218 - 1469377840218) + 1469377840218;
+ // else if (randomChance > 0.33) randomdate = Math.random() * (1481000960218 - 1471000960218) + 1471000960218;
+  //else randomdate = Math.random() * (1481000960218 - 1471000960218) + 1471000960218;
+   
+  //fulldatenow = new Date(randomdate).toISOString();
   
   //Default date 
   fulldatenow = new Date().toISOString();
